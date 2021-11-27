@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpscGeek.Client", "UpscGeek.Client\UpscGeek.Client.csproj", "{B44EC860-7526-44F8-BD0F-87DBBCCD5F9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpscGeek.API", "UpscGeek.API\UpscGeek.API.csproj", "{45FEEF57-9EC6-4A18-A743-B93B7231C20C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpscGeek.Application", "UpscGeek.Application\UpscGeek.Application.csproj", "{19BF228D-C856-4268-B11A-E65ADABC5776}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpscGeek.Core", "UpscGeek.Core\UpscGeek.Core.csproj", "{74DE14C8-74FD-4F26-AC89-F90D2B35F57C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpscGeek.Infrastructure", "UpscGeek.Infrastructure\UpscGeek.Infrastructure.csproj", "{C50E4F30-D22A-4366-AD56-F994590352AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B44EC860-7526-44F8-BD0F-87DBBCCD5F9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44EC860-7526-44F8-BD0F-87DBBCCD5F9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44EC860-7526-44F8-BD0F-87DBBCCD5F9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44EC860-7526-44F8-BD0F-87DBBCCD5F9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45FEEF57-9EC6-4A18-A743-B93B7231C20C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FEEF57-9EC6-4A18-A743-B93B7231C20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FEEF57-9EC6-4A18-A743-B93B7231C20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FEEF57-9EC6-4A18-A743-B93B7231C20C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19BF228D-C856-4268-B11A-E65ADABC5776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19BF228D-C856-4268-B11A-E65ADABC5776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19BF228D-C856-4268-B11A-E65ADABC5776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19BF228D-C856-4268-B11A-E65ADABC5776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74DE14C8-74FD-4F26-AC89-F90D2B35F57C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74DE14C8-74FD-4F26-AC89-F90D2B35F57C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74DE14C8-74FD-4F26-AC89-F90D2B35F57C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74DE14C8-74FD-4F26-AC89-F90D2B35F57C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50E4F30-D22A-4366-AD56-F994590352AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50E4F30-D22A-4366-AD56-F994590352AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50E4F30-D22A-4366-AD56-F994590352AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50E4F30-D22A-4366-AD56-F994590352AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

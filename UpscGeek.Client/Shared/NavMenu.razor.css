@@ -1,0 +1,55 @@
+.Side-Nav{
+    height: 100vh;
+    background: #F8F8F8;
+    width: 250px;
+}
+li.rz-navigation-item{
+    background: #F8F8F8;
+}
+.menuPanel{
+    background: #0b2e13;
+}
+.topheading{    
+    /*width: 100%;*/
+    font-size: 25px;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    /*margin: 20px;*/
+    padding-top: 30px;
+    margin-left: 30px;
+    justify-content: center;
+    /*align-items: center;*/
+    
+}
+.nav-list{
+    list-style-type: none;
+    padding: 0;
+    /*margin-top: 40px;*/
+}
+.nav-item{
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #646464;
+    padding: 5px 18px;
+    /*height: 40px;*/
+    width: 90%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav-item:hover{
+    border-radius:18px;
+    color: #0b2e13;
+    background-color: #a4c9a9;
+    /*height: 40px;*/
+    
+}
+
+.active,.active:hover{
+    color: white;
+    background-color:#0b2e13 ;
+    border-radius:18px;
+    /*height: 40px;*/
+}
