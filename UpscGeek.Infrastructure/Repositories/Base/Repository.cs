@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using MongoDB.Driver;
 using UpscGeek.Core.Entities;
 using UpscGeek.Core.Repositories.Base;
+using UpscGeek.Infrastructure.Data;
 
 namespace UpscGeek.Infrastructure.Repositories.Base
 {
@@ -12,6 +13,7 @@ namespace UpscGeek.Infrastructure.Repositories.Base
     {
 
         private readonly IMongoDatabase _database;
+        private readonly MainDbContext _dbContext;
         public Repository()
         {
             MongoClient client = new MongoClient(
