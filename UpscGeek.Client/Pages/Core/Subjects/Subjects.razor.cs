@@ -1,17 +1,24 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Json;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components;
+using UpscGeek.Core.Entities;
+using UpscGeek.Core.Services.Base;
 
 namespace UpscGeek.Client.Pages.Core.Subjects
 {
     public partial class Subjects
     {
-        private Dictionary<string, List<string>> hashMap = new Dictionary<string, List<string>>();
-
-        public Subjects()
+        public List<Subject> subjects = new List<Subject>();
+        [Inject]
+        public IService<Subject> _Service { get; set; }
+        
+        protected override async Task OnInitializedAsync()
         {
-            this.hashMap.Add("GS-I",new List<string>(){"Art& Culture","Modern History","World History","Geogrpahy of India & World","Human Geography","Indian Society"});
-                this.hashMap.Add("GS-II",new List<string>(){"Polity","Governance","Consitution","Social Justice","International Relations"});
-                this.hashMap.Add("GS-III",new List<string>(){"Technology","Economic Development","Biodiversity","Environment","Security","Disaster Management"});
-                this.hashMap.Add("GS-IV",new List<string>(){"Ethics","Integrity","Aptitude"});
+            this.subjects = (await _Service.GetAllAsync("api/subject")).ToList();
         }
     }
 

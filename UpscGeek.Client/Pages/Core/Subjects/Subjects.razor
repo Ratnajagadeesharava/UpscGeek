@@ -1,17 +1,21 @@
 ﻿@page "/Subjects"
+@using UpscGeek.Core.Entities
 
-<Tabs >
-	<TabPane Tab="All" Key="1">
-		Content of Tab Pane 1
-	</TabPane>
-	<TabPane Tab="Tab 2" Key="2">
-		Content of Tab Pane 2
-	</TabPane>
-	<TabPane Tab="Tab 3" Key="3">
-		Content of Tab Pane 3
-	</TabPane>
-</Tabs>
-
-@code {
-    
+@* <Tabs > *@
+@* 	<TabPane Tab="All" Key="1"> *@
+@* 		Content of Tab Pane 1 *@
+@* 		 *@
+@* 	</TabPane> *@
+@* 	<TabPane Tab="Tab 2" Key="2"> *@
+@* 		Content of Tab Pane 2 *@
+@* 	</TabPane> *@
+@* 	<TabPane Tab="Tab 3" Key="3"> *@
+@* 		Content of Tab Pane 3 *@
+@* 	</TabPane> *@
+@* 	 *@
+@* </Tabs> *@
+@foreach (Subject sub in subjects)
+{
+    <h1>@sub.SubjectName</h1>
+        		
 }

@@ -8,12 +8,10 @@ namespace UpscGeek.Core.Entities
 {
     public class Subject
     {
-        // [BsonId]
-        // [BsonId]
-        public ObjectId Id { get; set; }
-        [BsonElement("SubjectName")]
+        public int Id { get; set; }
+        
         public string SubjectName { get; set; }
-        [BsonElement("Paper")]
+       
         public Papers Paper { get; set; }
     }
 }

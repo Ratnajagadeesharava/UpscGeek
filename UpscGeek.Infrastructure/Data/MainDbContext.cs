@@ -8,7 +8,6 @@ namespace UpscGeek.Infrastructure.Data
         public MainDbContext(DbContextOptions<MainDbContext> options):base(options)
         {
         }
-
         public DbSet<Subject> Subjects { get; set; }
     }
 }

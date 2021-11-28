@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -14,6 +15,8 @@ using Microsoft.OpenApi.Models;
 using UpscGeek.Core.Entities;
 using UpscGeek.Core.Repositories;
 using UpscGeek.Core.Repositories.Base;
+using UpscGeek.Infrastructure.Data;
+using UpscGeek.Infrastructure.Repositories;
 using UpscGeek.Infrastructure.Repositories.Base;
 
 namespace UpscGeek.API
@@ -31,7 +34,15 @@ namespace UpscGeek.API
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddSingleton<IRepository<Subject>, Repository<Subject>>();
+            services.AddDbContext<MainDbContext>(options=>
+                options.UseNpgsql(Configuration.GetConnectionString("APIConnection"),m=>m.MigrationsAssembly("UpscGeek.API"))
+                
+                );
+            services.AddCors(options =>
+                options.AddDefaultPolicy(
+                    builder => builder.WithOrigins("https://localhost:5005")));
+            services.AddTransient<IRepository<Subject>, SubjectRepository>();
+            // services.AddCors(policy=>policy.)
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "UpscGeek.API", Version = "v1"});
@@ -51,7 +62,7 @@ namespace UpscGeek.API
             app.UseHttpsRedirection();
 
             app.UseRouting();
-
+            app.UseCors();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints => { endpoints.MapControllers(); });
