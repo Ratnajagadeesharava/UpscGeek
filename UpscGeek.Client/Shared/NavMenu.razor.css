@@ -1,55 +1,55 @@
-.Side-Nav{
+.Side-Nav {
     height: 100vh;
-    background: #F8F8F8;
+    background: #122541;
     width: 250px;
 }
-li.rz-navigation-item{
-    background: #F8F8F8;
+li.rz-navigation-item {
+    background: rgb(18,37,65);
 }
 .menuPanel{
     background: #0b2e13;
 }
 .topheading{    
-    /*width: 100%;*/
-    font-size: 25px;
+  
+    font-size: 25px;    
     font-weight: bolder;
-    display: flex;
-    flex-direction: column;
-    /*margin: 20px;*/
+    color:white;
     padding-top: 30px;
     margin-left: 30px;
-    justify-content: center;
-    /*align-items: center;*/
+    display:flex;
     
+}
+.letterg {
+    color: #F46663;
 }
 .nav-list{
     list-style-type: none;
     padding: 0;
-    /*margin-top: 40px;*/
 }
 .nav-item{
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #646464;
+    color:WHITE;
     padding: 5px 18px;
-    /*height: 40px;*/
+    
     width: 90%;
     margin-left: 10px;
     margin-right: 10px;
 }
 
-.nav-item:hover{
-    border-radius:18px;
-    color: #0b2e13;
-    background-color: #a4c9a9;
-    /*height: 40px;*/
-    
-}
+    .nav-item:hover {
+        border-radius: 18px;
+        color: #0b2e13;
+        background-color: #ECF1F7;
+        border: 1px solid #F46663;
+        /*height: 40px;*/
+    }
 
-.active,.active:hover{
-    color: white;
-    background-color:#0b2e13 ;
-    border-radius:18px;
+.active, .active:hover {
+    color: #0b2e13;
+    background-color: #ECF1F7;
+    border-radius: 18px;
+    
     /*height: 40px;*/
 }

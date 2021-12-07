@@ -1,21 +1,23 @@
 ﻿@page "/Subjects"
 @using UpscGeek.Core.Entities
-
-@* <Tabs > *@
-@* 	<TabPane Tab="All" Key="1"> *@
-@* 		Content of Tab Pane 1 *@
-@* 		 *@
-@* 	</TabPane> *@
-@* 	<TabPane Tab="Tab 2" Key="2"> *@
-@* 		Content of Tab Pane 2 *@
-@* 	</TabPane> *@
-@* 	<TabPane Tab="Tab 3" Key="3"> *@
-@* 		Content of Tab Pane 3 *@
-@* 	</TabPane> *@
-@* 	 *@
-@* </Tabs> *@
-@foreach (Subject sub in subjects)
-{
-    <h1>@sub.SubjectName</h1>
-        		
-}
+@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@using UpscGeek.Core.Entities.Enum;
+@using UpscGeek.Client.Pages.Shared;
+<div class="subjectsNav">
+    <div class="s-nav-item active">
+        All
+    </div>
+    <div class="s-nav-item">
+        GS-I
+    </div>
+    <div class="s-nav-item">
+        GS-II
+    </div>
+    <div class="s-nav-item">
+        GS-III
+    </div>
+    <div class="s-nav-item">
+        GS-IV
+    </div>
+</div>
+<SubjectView subjects="subjects"></SubjectView>
