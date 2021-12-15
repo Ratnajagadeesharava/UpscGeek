@@ -1,10 +1,10 @@
 @using System.Reactive.Subjects
 @using Subject = UpscGeek.Core.Entities.Subject
+
 @foreach (Subject subject in subjects)
 {
-    <Card Bordered="false" Title=@subject.SubjectName Class="subjectcard">
-        <Body>
-        <p>@subject.Paper</p>
-        </Body>
-    </Card>
+     <div class="subjectcard">
+                            <div class="subjectName">@subject.SubjectName</div>
+                            <i class="fas fa-arrow-right"></i>
+      </div>
 }
