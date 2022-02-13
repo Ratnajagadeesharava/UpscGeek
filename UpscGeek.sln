@@ -1,5 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpscGeek.Client", "UpscGeek.Client\UpscGeek.Client.csproj", "{B44EC860-7526-44F8-BD0F-87DBBCCD5F9D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpscGeek.API", "UpscGeek.API\UpscGeek.API.csproj", "{45FEEF57-9EC6-4A18-A743-B93B7231C20C}"

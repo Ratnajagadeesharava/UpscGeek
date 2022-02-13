@@ -1,23 +1,18 @@
 ﻿@page "/Subjects"
-@using UpscGeek.Core.Entities
-@using Microsoft.EntityFrameworkCore.Metadata.Internal
-@using UpscGeek.Core.Entities.Enum;
 @using UpscGeek.Client.Pages.Shared;
-<div class="subjectsNav">
-    <div class="s-nav-item active">
-        All
-    </div>
-    <div class="s-nav-item">
-        GS-I
-    </div>
-    <div class="s-nav-item">
-        GS-II
-    </div>
-    <div class="s-nav-item">
-        GS-III
-    </div>
-    <div class="s-nav-item">
-        GS-IV
-    </div>
-</div>
-<SubjectView subjects="subjects"></SubjectView>
+@using UpscGeek.Core.Entities.Enum
+<div class="main-content">
+                <div class="top-header">
+                    <ul class="subjects">
+                        <li class="subject active">All</li>
+                        <li class="subject">GS-I</li>
+                        <li class="subject">GS-II</li>
+                        <li class="subject">GS-III</li>
+                        <li class="subject">GS-IV</li>
+                    </ul>
+                </div>
+                <div class="subject-content">
+                   
+<SubjectView subjects="FilteredSubjects"></SubjectView>
+                </div>
+            </div>
