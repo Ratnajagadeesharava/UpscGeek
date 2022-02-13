@@ -10,6 +10,7 @@ using Microsoft.Extensions.Logging;
 using AntDesign;
 using UpscGeek.Core.Entities;
 using UpscGeek.Core.Services.Base;
+using UpscGeek.Infrastructure.FacadeServices;
 using UpscGeek.Infrastructure.Services.Base;
 
 namespace UpscGeek.Client
@@ -20,8 +21,9 @@ namespace UpscGeek.Client
         {
             var builder = WebAssemblyHostBuilder.CreateDefault(args);
             builder.RootComponents.Add<App>("#app");
+            builder.Services.AddSingleton<SampleService>();
             builder.Services.AddAntDesign();
-            builder.Services.AddHttpClient<IService<Subject>, Service<Subject>>(client =>
+            builder.Services.AddHttpClient<IService<Subject>,Service<Subject>>(client =>
                 {
                     client.BaseAddress = new Uri("https://localhost:5001/");
                 }

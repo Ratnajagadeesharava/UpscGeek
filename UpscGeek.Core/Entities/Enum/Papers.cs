@@ -2,6 +2,6 @@
 {
     public enum Papers
     {
-        Gs1,Gs2,Gs3,Gs4,Essay,Optional
+        Essay,Gs1,Gs2,Gs3,Gs4,Optional
     }
 }
