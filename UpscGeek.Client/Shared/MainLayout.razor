@@ -1,17 +1,9 @@
 @inherits LayoutComponentBase
-
-<div class="page d-flex">
-    <div class="sidebar">
-        <NavMenu/>
-    </div>
-
-    <div class="main">
-        <div class="topnav">
-           @* <TopNavMenu></TopNavMenu> *@
-            
-        </div>
-        <div class="main-content">
-            @Body
-        </div>
-    </div>
-</div>
+@using UpscGeek.Client.Pages.Shared
+<TopNavMenu></TopNavMenu>
+ <div class="container-fluid main">
+     <div class="container content d-flex">
+         <NavMenu/>
+         @Body
+     </div>
+ </div>

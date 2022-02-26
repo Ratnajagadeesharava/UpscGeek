@@ -11,19 +11,17 @@
         <PackageReference Include="Microsoft.Extensions.Http" Version="5.0.0" />
         <PackageReference Include="Radzen.Blazor" Version="3.13.1" />
         <PackageReference Include="System.Net.Http.Json" Version="5.0.0" />
+        <PackageReference Include="System.Reactive" Version="5.0.0" />
     </ItemGroup>
 
     <ItemGroup>
       <Content Remove="Shared\SurveyPrompt.razor" />
       <Content Remove="Shared\TopNav.razor" />
+      <Content Remove="Pages\Shared\TopNav.razor" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="Shared\TopNav.razor.css" />
-    </ItemGroup>
-
-    <ItemGroup>
-      <Folder Include="Pages\Components" />
     </ItemGroup>
 
     <ItemGroup>

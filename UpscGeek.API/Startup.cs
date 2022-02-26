@@ -40,7 +40,7 @@ namespace UpscGeek.API
                 );
             services.AddCors(options =>
                 options.AddDefaultPolicy(
-                    builder => builder.WithOrigins("https://localhost:5005")));
+                    builder => builder.WithOrigins("https://localhost:4200")));
             services.AddTransient<IRepository<Subject>, SubjectRepository>();
             // services.AddCors(policy=>policy.)
             services.AddSwaggerGen(c =>
